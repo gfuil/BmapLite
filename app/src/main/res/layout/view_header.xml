@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/lay_menu_header"
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/image_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/side_nav_bar"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/image_head"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16sp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/app_name"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/text_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简单的双地图应用"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="12sp"/>
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#2E7D32</color>
+    <color name="colorAccent">#81C784</color>
+    <color name="colorPressed">#CACACA</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorLine">#DDDDDD</color>
+    <color name="transparentBg">#99FFFFFF</color>
+    <color name="colorSideNavStart">#81C784</color>
+    <color name="colorSideNavCenter">#4CAF50</color>
+    <color name="colorSideNavEnd">#2E7D32</color>
+
+    <color name="blue">#0000FF</color>
+
+    <color name="keyword1">#FCBF43</color>
+    <color name="keyword2">#61C56F</color>
+    <color name="keyword3">#8458A7</color>
+    <color name="keyword4">#F9A84C</color>
+    <color name="keyword5">#33ABA1</color>
+    <color name="keyword6">#F04950</color>
+    <color name="keyword7">#FBBE45</color>
+    <color name="keyword8">#5C5C5C</color>
+    <color name="keyword9">#318ECC</color>
+    <color name="keyword10">#F04950</color>
+    <color name="keyword11">#33ABA1</color>
+    <color name="keyword12">#757575</color>
+
+
+    <color name="colorSettingTitle">#333333</color>
+    <color name="colorSettingInfo">#999999</color>
+</resources>

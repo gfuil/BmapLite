@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="way_plan">
+        <item>步行</item>
+        <item>公交</item>
+        <item>骑行</item>
+        <item>驾驶</item>
+    </string-array>
+    <string-array name="type_route">
+        <item>自动（1KM内步行，否则驾车）</item>
+        <item>步行</item>
+        <item>公交</item>
+        <item>骑行</item>
+        <item>驾驶</item>
+    </string-array>
+    <string-array name="type_map" >
+        <item>百度地图</item>
+        <item>高德地图</item>
+    </string-array>
+    <string-array name="way_pay" >
+        <item>支付宝 [3021702005@qq.com]</item>
+        <item>微信 [3021702005]</item>
+    </string-array>
+    <string-array name="type_tts" >
+        <item>静音</item>
+        <item>手机自带TTS</item>
+        <item>讯飞在线语音</item>
+    </string-array>
+    <string-array name="type_theme" >
+        <item>原谅绿</item>
+        <item>姨妈红</item>
+        <item>哔哩粉</item>
+        <item>水鸭青</item>
+        <item>基佬紫</item>
+        <item>知乎蓝</item>
+        <item>低调灰</item>
+        <item>高端黑</item>
+        <item>A屏黑</item>
+    </string-array>
+    <string-array name="zoom_control" >
+        <item>右边</item>
+        <item>左边</item>
+    </string-array>
+    <string-array name="way_feedback" >
+        <item>百度地图</item>
+        <item>高德地图</item>
+        <item>@string/app_name</item>
+    </string-array>
+
+
+    <string-array name="tips" >
+        <item>美食</item>
+        <item>超市</item>
+        <item>酒店</item>
+        <item>银行</item>
+        <item>景点</item>
+        <item>医院</item>
+        <item>商场</item>
+        <item>电影院</item>
+        <item>停车场</item>
+        <item>加油站</item>
+        <item>公交站</item>
+        <item>地铁站</item>
+    </string-array>
+</resources>

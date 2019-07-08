@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false"
+    android:background="@android:color/black"
+    tools:context="me.gfuil.bmap.activity.PanoramaActivity">
+
+
+
+
+    <com.baidu.lbsapi.panoramaview.PanoramaView
+        android:id="@+id/panorama"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:fitsSystemWindows="false"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/text_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="载入中..."
+        android:textColor="#dddddd"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close_white_24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="#55000000"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

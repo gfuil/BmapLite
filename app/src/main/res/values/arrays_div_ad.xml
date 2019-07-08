@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="div_ad_id">
+        <item>common-bottombanner-widget-fis</item>
+        <item>common-footer-widget</item>
+        <item>comment_form</item>
+        <item>sideBar</item>
+        <item>blog_post_info_block</item>
+    </string-array>
+    <string-array name="div_ad_class">
+        <item>o-downloadtips-dark-detail shadow clearfix bottom fontStyle</item>
+        <item>header</item>
+    </string-array>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppThemeBus" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#5885EA</item>
+        <item name="colorPrimaryDark">#5885EA</item>
+        <item name="colorAccent">#5885EA</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+</resources>

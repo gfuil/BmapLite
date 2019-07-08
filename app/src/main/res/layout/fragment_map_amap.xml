@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_amap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:fitsSystemWindows="false" />
+
+    <ImageView
+        android:id="@+id/image_compass"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/maps_dav_compass_needle_large" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_zoom_in"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:text="＋"
+                android:textColor="#757575"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPressed" />
+
+            <Button
+                android:id="@+id/btn_zoom_out"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:text="－"
+                android:textColor="#757575"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_floor"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/list_floors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorLine"
+            android:dividerHeight="1px" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_my_location_24dp"
+        app:backgroundTint="@color/colorBackground"
+        app:fabSize="mini"
+        app:rippleColor="@color/colorPressed" />
+</FrameLayout>

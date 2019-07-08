@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BmapLite</string>
+    <string name="app_info">简单的双地图应用</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="app_protocol">本应用仍在实验阶段，采用百度、高德SDK提供的路线数据，不保证道路安全准确，仅供参考，请自行承担风险。\n本应用不为您的生命安全及财产负责，出行请遵守交通法律法规。</string>
+    <string name="loading_more">正在加载更多......</string>
+
+    <string name="gps_enabled_false">未打开GPS开关，可能导致定位失败或定位不准</string>
+    <string name="app_developer">刘风广</string>
+    <string name="mail_developer">3021702005@qq.com</string>
+    <string name="thanks">设计上的帮助 fairyex@coolapk</string>
+    <string name="link_thanks">http://www.coolapk.com/u/466253</string>
+    <string name="link_download">http://www.coolapk.com/apk/me.gfuil.bmap.lite</string>
+    <string name="link_github">https://github.com/gfuil/BmapLite</string>
+
+</resources>

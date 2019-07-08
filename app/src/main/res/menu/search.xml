@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:title="搜索"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/action_change_city"
+        android:title="切换城市"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_all"
+        android:title="全部在地图上标注"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_clear"
+        android:title="清除历史记录"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_ranging"
+        android:orderInCategory="100"
+        android:title="0Km"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="100"
+        android:title="删除"
+        app:showAsAction="always"/>
+    <!--android:icon="@drawable/ic_undo_white_24dp"-->
+
+    <item
+        android:id="@+id/action_clear"
+        android:orderInCategory="100"
+        android:title="清除"
+        app:showAsAction="always"/>
+    <!--android:icon="@drawable/ic_delete_forever_white_24dp"-->
+
+</menu>

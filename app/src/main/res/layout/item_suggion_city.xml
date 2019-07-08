@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_city"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_height="35dp"
+    android:background="@drawable/bg_btn_poi_selector_2" />
+

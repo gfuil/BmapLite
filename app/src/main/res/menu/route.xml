@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_back"
+        android:orderInCategory="100"
+        android:title="返程路线"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_change_map"
+        android:orderInCategory="100"
+        android:title="切换源"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_settings_navigation"
+        android:orderInCategory="100"
+        android:title="导航设置"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+</menu>

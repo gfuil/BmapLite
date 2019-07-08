@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#999999</color>
+    <color name="colorPressed">#565656</color>
+    <color name="colorBackground">#212121</color>
+    <color name="colorLine">#333333</color>
+    <color name="colorSettingTitle">#999999</color>
+    <color name="colorSettingInfo">#555555</color>
+    <color name="colorSideNavStart">#000000</color>
+    <color name="colorSideNavCenter">#121212</color>
+    <color name="colorSideNavEnd">#212121</color>
+    <color name="transparentBg">#99000000</color>
+</resources>

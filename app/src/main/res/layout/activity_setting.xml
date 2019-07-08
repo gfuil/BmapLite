@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_topbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/lay_setting_map"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="默认地图"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/text_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="百度地图"
+                    android:textColor="@color/colorSettingInfo"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+                android:id="@+id/lay_setting_dir"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数据存储目录"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/text_dir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorSettingInfo"
+                    android:text="当前位置"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+                android:id="@+id/lay_setting_default_route"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="默认出行方式"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/text_route"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorSettingInfo"
+                    android:text="自动（1KM内步行，否则驾车）"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+			    android:id="@+id/lay_mode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="夜间模式"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/group_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="白天" />
+
+                    <RadioButton
+                        android:id="@+id/radio_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="夜间" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:id="@+id/lay_screen_light"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="主页屏幕常亮"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <CheckBox
+                    android:id="@+id/check_screen_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+                android:id="@+id/lay_traffic"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="实时路况"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_traffic"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+                android:id="@+id/lay_zoom"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="双指缩放手势"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_zoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+                android:id="@+id/lay_rotate"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="双指旋转手势"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_rotate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+                android:id="@+id/lay_overlook"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="双指切换视角手势"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_overlook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="比例尺"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_scale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+            <!--<include layout="@layout/view_line"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="显示POI"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_poi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+            <!--<include layout="@layout/view_line"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="缩放按钮位置"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <RadioGroup
+                    android:id="@+id/group_zoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radio_zoom_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="左边"
+                        />
+                    <RadioButton
+                        android:id="@+id/radio_zoom_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="右边"/>
+                </RadioGroup>
+
+                <Spinner
+                    android:visibility="gone"
+                    android:id="@+id/spinner_zoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="定位按钮位置"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!--<include layout="@layout/view_line"/>-->
+
+
+
+            <LinearLayout
+                android:id="@+id/lay_app_details"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="应用详情"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+            <LinearLayout
+                android:id="@+id/lay_about"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_btn_poi_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关于"
+                    android:textColor="@color/colorSettingTitle"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
