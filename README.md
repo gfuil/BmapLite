@@ -5,5 +5,6 @@
 
 [Bmap 下载地址](http://www.coolapk.com/apk/me.gfuil.bmap)
 
-[Bmap 官方网站](http://www.bmap.top/)
+[Bmap 官方网站](http://www.bmap6.cn/)
 
+鄙视APP市场上使用该源码，蹭国家北斗导航的名头，欺骗用户的人或公司，你们都是一群垃圾、社会蛀虫，善恶有报，你们终将尝到恶果！
